@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Eficent Business and IT Consulting Services, S.L.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+  <data>
+
+    <!--  menu -->
+    <record id="stock.menu_stock_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_stock_manager')),(4,ref('stock.group_stock_user')),(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!--  menu -->
+    <record id="stock.menu_stock_warehouse_mgmt" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!--  menu -->
+    <record id="stock.menu_stock_config_settings" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_stock_manager')),(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!--  menu -->
+    <record id="stock.menu_warehouse_config" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_stock_manager')),(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!--  menu -->
+    <record id="stock.menu_product_in_config_stock" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!-- barcode.nomenclature menu -->
+    <record id="stock.menu_wms_barcode_nomenclature_all" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('base.group_no_one')),(4,ref('stratification_stock.group_stratification_barcode_nomenclature_menu'))]"/>
+    </record>
+    
+    <!--  menu -->
+    <record id="stock.product_uom_menu" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('product.group_uom')),(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!-- product.category menu -->
+    <record id="stock.menu_product_category_config_stock" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stratification_stock.group_stratification_product_category_menu'))]"/>
+    </record>
+    
+    <!-- product.attribute menu -->
+    <record id="stock.menu_attribute_action" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('product.group_product_variant')),(4,ref('stratification_stock.group_stratification_product_attribute_menu'))]"/>
+    </record>
+    
+    <!-- product.attribute.value menu -->
+    <record id="stock.menu_variants_action" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('product.group_product_variant')),(4,ref('stratification_stock.group_stratification_product_attribute_value_menu'))]"/>
+    </record>
+    
+    <!-- product.uom.categ menu -->
+    <record id="stock.menu_stock_uom_categ_form_action" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stratification_stock.group_stratification_product_uom_categ_menu'))]"/>
+    </record>
+    
+    <!-- product.uom menu -->
+    <record id="stock.menu_stock_uom_form_action" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stratification_stock.group_stratification_product_uom_menu'))]"/>
+    </record>
+    
+    <!--  menu -->
+    <record id="stock.menu_stock_inventory_control" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!--  menu -->
+    <record id="stock.menu_warehouse_report" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_stock_manager')),(4,ref('group_stratification_stock_root_menu'))]"/>
+    </record>
+    
+    <!-- stock.scheduler.compute menu -->
+    <record id="stock.menu_procurement_compute" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_scheduler_compute_menu'))]"/>
+    </record>
+    
+    <!-- stock.quantity.history menu -->
+    <record id="stock.menu_valuation" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_quantity_history_menu'))]"/>
+    </record>
+    
+    <!-- stock.incoterms menu -->
+    <record id="stock.menu_action_incoterm_open" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('base.group_no_one')),(4,ref('group_stratification_stock_incoterms_menu'))]"/>
+    </record>
+    
+    <!-- stock.production.lot menu -->
+    <record id="stock.menu_action_production_lot_form" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_production_lot')),(4,ref('group_stratification_stock_production_lot_menu'))]"/>
+    </record>
+    
+    <!-- stock.picking.type menu -->
+    <record id="stock.stock_picking_type_menu" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_picking_type_menu'))]"/>
+    </record>
+    
+    <!-- stock.picking.type menu -->
+    <record id="stock.menu_pickingtype" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_picking_type_menu'))]"/>
+    </record>
+    
+    <!-- stock.picking menu -->
+    <record id="stock.all_picking" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_stock_manager')),(4,ref('stock.group_stock_user')),(4,ref('group_stratification_stock_picking_menu'))]"/>
+    </record>
+    
+    <!-- stock.scrap menu -->
+    <record id="stock.menu_stock_scrap" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_scrap_menu'))]"/>
+    </record>
+    
+    <!-- stock.inventory menu -->
+    <record id="stock.menu_action_inventory_form" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_inventory_menu'))]"/>
+    </record>
+    
+    <!-- stock.quant.package menu -->
+    <record id="stock.menu_package" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_tracking_lot')),(4,ref('group_stratification_stock_quant_package_menu'))]"/>
+    </record>
+    
+    <!-- stock.location menu -->
+    <record id="stock.menu_action_location_form" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_stock_multi_locations')),(4,ref('group_stratification_stock_location_menu'))]"/>
+    </record>
+    
+    <!-- stock.location.route menu -->
+    <record id="stock.menu_routes_config" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stock.group_adv_location')),(4,ref('group_stratification_stock_location_route_menu'))]"/>
+    </record>
+    
+    <!-- stock.warehouse menu -->
+    <record id="stock.menu_action_warehouse_form" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_warehouse_menu'))]"/>
+    </record>
+    
+    <!-- stock.warehouse.orderpoint menu -->
+    <record id="stock.menu_reordering_rules_config" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_warehouse_orderpoint_menu'))]"/>
+    </record>
+    
+    <!-- stock.move.line menu -->
+    <record id="stock.stock_move_line_menu" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('group_stratification_stock_move_line_menu'))]"/>
+    </record>
+    
+    <!-- stock.move menu -->
+    <record id="stock.stock_move_menu" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('base.group_no_one')),(4,ref('group_stratification_stock_move_menu'))]"/>
+    </record>
+    
+    <!-- product.template menu -->
+    <record id="stock.menu_product_variant_config_stock" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('stratification_stock.group_stratification_product_template_menu'))]"/>
+    </record>
+    
+    <!-- product.product menu -->
+    <record id="stock.product_product_menu" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('product.group_product_variant')),(4,ref('stratification_stock.group_stratification_product_product_menu'))]"/>
+    </record>
+    
+    <!-- product.packaging menu -->
+    <record id="stock.menu_product_packagings" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('product.group_stock_packaging')),(4,ref('stratification_stock.group_stratification_product_packaging_menu'))]"/>
+    </record>
+    
+  </data>
+</odoo>

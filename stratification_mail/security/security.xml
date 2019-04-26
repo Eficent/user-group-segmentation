@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Eficent Business and IT Consulting Services, S.L.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+  <data>
+
+    <!-- mail root menu -->
+    <record id="group_stratification_mail_root_menu" model="res.groups">
+        <field name="name">Stratification Mail Root Menu</field>
+        <field name="category_id" ref="module_stratification_mail"/>
+    </record>
+
+    <!-- mail.alias read group -->
+    <record id="group_stratification_mail_alias_read" model="res.groups">
+        <field name="name">Stratification Mail Alias Read</field>
+        <field name="category_id" ref="model_stratification_mail_alias"/>
+    </record>
+
+    <!-- mail.template read group -->
+    <record id="group_stratification_mail_template_read" model="res.groups">
+        <field name="name">Stratification Mail Template Read</field>
+        <field name="category_id" ref="model_stratification_mail_template"/>
+    </record>
+
+    <!-- mail.activity read group -->
+    <record id="group_stratification_mail_activity_read" model="res.groups">
+        <field name="name">Stratification Mail Activity Read</field>
+        <field name="category_id" ref="model_stratification_mail_activity"/>
+    </record>
+
+    <!-- mail.shortcode read group -->
+    <record id="group_stratification_mail_shortcode_read" model="res.groups">
+        <field name="name">Stratification Mail Shortcode Read</field>
+        <field name="category_id" ref="model_stratification_mail_shortcode"/>
+    </record>
+
+    <!-- mail.tracking.value read group -->
+    <record id="group_stratification_mail_tracking_value_read" model="res.groups">
+        <field name="name">Stratification Mail Tracking Value Read</field>
+        <field name="category_id" ref="model_stratification_mail_tracking_value"/>
+    </record>
+
+    <!-- mail.channel.partner read group -->
+    <record id="group_stratification_mail_channel_partner_read" model="res.groups">
+        <field name="name">Stratification Mail Channel Partner Read</field>
+        <field name="category_id" ref="model_stratification_mail_channel_partner"/>
+    </record>
+
+    <!-- mail.notification read group -->
+    <record id="group_stratification_mail_notification_read" model="res.groups">
+        <field name="name">Stratification Mail Notification Read</field>
+        <field name="category_id" ref="model_stratification_mail_notification"/>
+    </record>
+
+    <!-- mail.message read group -->
+    <record id="group_stratification_mail_message_read" model="res.groups">
+        <field name="name">Stratification Mail Message Read</field>
+        <field name="category_id" ref="model_stratification_mail_message"/>
+    </record>
+
+    <!-- mail.followers read group -->
+    <record id="group_stratification_mail_followers_read" model="res.groups">
+        <field name="name">Stratification Mail Followers Read</field>
+        <field name="category_id" ref="model_stratification_mail_followers"/>
+    </record>
+
+    <!-- mail.channel read group -->
+    <record id="group_stratification_mail_channel_read" model="res.groups">
+        <field name="name">Stratification Mail Channel Read</field>
+        <field name="category_id" ref="model_stratification_mail_channel"/>
+    </record>
+
+    <!-- mail.message.subtype read group -->
+    <record id="group_stratification_mail_message_subtype_read" model="res.groups">
+        <field name="name">Stratification Mail Message Subtype Read</field>
+        <field name="category_id" ref="model_stratification_mail_message_subtype"/>
+    </record>
+
+    <!-- mail.mail read group -->
+    <record id="group_stratification_mail_mail_read" model="res.groups">
+        <field name="name">Stratification Mail Mail Read</field>
+        <field name="category_id" ref="model_stratification_mail_mail"/>
+    </record>
+
+    <!-- mail.activity.type read group -->
+    <record id="group_stratification_mail_activity_type_read" model="res.groups">
+        <field name="name">Stratification Mail Activity Type Read</field>
+        <field name="category_id" ref="model_stratification_mail_activity_type"/>
+    </record>
+
+    <!-- mail.alias view/write groups -->
+    <record id="group_stratification_mail_alias_write" model="res.groups">
+        <field name="name">Stratification Mail Alias Write</field>
+        <field name="category_id" ref="model_stratification_mail_alias"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_alias_read'))]"/>
+    </record>
+
+    <!-- mail.template view/write groups -->
+    <record id="group_stratification_mail_template_write" model="res.groups">
+        <field name="name">Stratification Mail Template Write</field>
+        <field name="category_id" ref="model_stratification_mail_template"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_template_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- mail.activity view/write groups -->
+    <record id="group_stratification_mail_activity_write" model="res.groups">
+        <field name="name">Stratification Mail Activity Write</field>
+        <field name="category_id" ref="model_stratification_mail_activity"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_activity_type_read')),(4,ref('stratification_mail.group_stratification_mail_activity_read'))]"/>
+    </record>
+
+    <!-- mail.shortcode view/write groups -->
+    <record id="group_stratification_mail_shortcode_write" model="res.groups">
+        <field name="name">Stratification Mail Shortcode Write</field>
+        <field name="category_id" ref="model_stratification_mail_shortcode"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_shortcode_read'))]"/>
+    </record>
+
+    <!-- mail.tracking.value view/write groups -->
+    <record id="group_stratification_mail_tracking_value_write" model="res.groups">
+        <field name="name">Stratification Mail Tracking Value Write</field>
+        <field name="category_id" ref="model_stratification_mail_tracking_value"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_tracking_value_read')),(4,ref('stratification_mail.group_stratification_mail_message_read'))]"/>
+    </record>
+
+    <!-- mail.channel.partner view/write groups -->
+    <record id="group_stratification_mail_channel_partner_write" model="res.groups">
+        <field name="name">Stratification Mail Channel Partner Write</field>
+        <field name="category_id" ref="model_stratification_mail_channel_partner"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_channel_read')),(4,ref('stratification_mail.group_stratification_mail_channel_partner_read')),(4,ref('stratification_mail.group_stratification_mail_message_read'))]"/>
+    </record>
+
+    <!-- mail.notification view/write groups -->
+    <record id="group_stratification_mail_notification_write" model="res.groups">
+        <field name="name">Stratification Mail Notification Write</field>
+        <field name="category_id" ref="model_stratification_mail_notification"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_mail.group_stratification_mail_notification_read')),(4,ref('stratification_mail.group_stratification_mail_message_read'))]"/>
+    </record>
+
+    <!-- mail.message view/write groups -->
+    <record id="group_stratification_mail_message_write" model="res.groups">
+        <field name="name">Stratification Mail Message Write</field>
+        <field name="category_id" ref="model_stratification_mail_message"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_message_subtype_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_mail.group_stratification_mail_channel_read')),(4,ref('stratification_mail.group_stratification_mail_activity_type_read')),(4,ref('stratification_mail.group_stratification_mail_tracking_value_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_notification_read'))]"/>
+    </record>
+
+    <!-- mail.followers view/write groups -->
+    <record id="group_stratification_mail_followers_write" model="res.groups">
+        <field name="name">Stratification Mail Followers Write</field>
+        <field name="category_id" ref="model_stratification_mail_followers"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_mail.group_stratification_mail_message_subtype_read')),(4,ref('stratification_mail.group_stratification_mail_channel_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read'))]"/>
+    </record>
+
+    <!-- mail.channel view/write groups -->
+    <record id="group_stratification_mail_channel_write" model="res.groups">
+        <field name="name">Stratification Mail Channel Write</field>
+        <field name="category_id" ref="model_stratification_mail_channel"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_base.group_stratification_res_groups_read')),(4,ref('stratification_mail.group_stratification_mail_channel_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_alias_read')),(4,ref('stratification_mail.group_stratification_mail_channel_partner_read'))]"/>
+    </record>
+
+    <!-- mail.message.subtype view/write groups -->
+    <record id="group_stratification_mail_message_subtype_write" model="res.groups">
+        <field name="name">Stratification Mail Message Subtype Write</field>
+        <field name="category_id" ref="model_stratification_mail_message_subtype"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_message_subtype_read'))]"/>
+    </record>
+
+    <!-- mail.mail view/write groups -->
+    <record id="group_stratification_mail_mail_write" model="res.groups">
+        <field name="name">Stratification Mail Mail Write</field>
+        <field name="category_id" ref="model_stratification_mail_mail"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_message_subtype_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_mail.group_stratification_mail_channel_read')),(4,ref('stratification_mail.group_stratification_mail_mail_read')),(4,ref('stratification_mail.group_stratification_mail_activity_type_read')),(4,ref('stratification_mail.group_stratification_mail_tracking_value_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_notification_read'))]"/>
+    </record>
+
+    <!-- mail.activity.type view/write groups -->
+    <record id="group_stratification_mail_activity_type_write" model="res.groups">
+        <field name="name">Stratification Mail Activity Type Write</field>
+        <field name="category_id" ref="model_stratification_mail_activity_type"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_mail.group_stratification_mail_activity_type_read'))]"/>
+    </record>
+
+  </data>
+</odoo>

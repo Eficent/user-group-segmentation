@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Eficent Business and IT Consulting Services, S.L.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+  <data>
+
+    <!--  menu -->
+    <record id="mail.mail_channel_menu_root_chat" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4,ref('base.group_user')),(4,ref('group_stratification_mail_root_menu'))]"/>
+    </record>
+    
+  </data>
+</odoo>

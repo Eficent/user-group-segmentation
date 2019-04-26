@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Eficent Business and IT Consulting Services, S.L.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+  <data>
+
+    <record id="module_stratification_stock" model="ir.module.category">
+        <field name="name">Stratification Stock Root Menu</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_inventory_line" model="ir.module.category">
+        <field name="name">Stratification Stock Inventory Line</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_scrap" model="ir.module.category">
+        <field name="name">Stratification Stock Scrap</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_move" model="ir.module.category">
+        <field name="name">Stratification Stock Move</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_product_putaway" model="ir.module.category">
+        <field name="name">Stratification Product Putaway</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_warehouse_orderpoint" model="ir.module.category">
+        <field name="name">Stratification Stock Warehouse Orderpoint</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_quantity_history" model="ir.module.category">
+        <field name="name">Stratification Stock Quantity History</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_production_lot" model="ir.module.category">
+        <field name="name">Stratification Stock Production Lot</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_location" model="ir.module.category">
+        <field name="name">Stratification Stock Location</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_fixed_putaway_strat" model="ir.module.category">
+        <field name="name">Stratification Stock Fixed Putaway Strat</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_location_path" model="ir.module.category">
+        <field name="name">Stratification Stock Location Path</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_quant" model="ir.module.category">
+        <field name="name">Stratification Stock Quant</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_warehouse" model="ir.module.category">
+        <field name="name">Stratification Stock Warehouse</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_incoterms" model="ir.module.category">
+        <field name="name">Stratification Stock Incoterms</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_location_route" model="ir.module.category">
+        <field name="name">Stratification Stock Location Route</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_quant_package" model="ir.module.category">
+        <field name="name">Stratification Stock Quant Package</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_product_removal" model="ir.module.category">
+        <field name="name">Stratification Product Removal</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_inventory" model="ir.module.category">
+        <field name="name">Stratification Stock Inventory</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_procurement_rule" model="ir.module.category">
+        <field name="name">Stratification Procurement Rule</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_scheduler_compute" model="ir.module.category">
+        <field name="name">Stratification Stock Scheduler Compute</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_picking_type" model="ir.module.category">
+        <field name="name">Stratification Stock Picking Type</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_procurement_group" model="ir.module.category">
+        <field name="name">Stratification Procurement Group</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_move_line" model="ir.module.category">
+        <field name="name">Stratification Stock Move Line</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_stock_picking" model="ir.module.category">
+        <field name="name">Stratification Stock Picking</field>
+        <field name="sequence">200</field>
+    </record>
+
+  </data>
+</odoo>

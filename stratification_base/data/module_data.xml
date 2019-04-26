@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Eficent Business and IT Consulting Services, S.L.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+  <data>
+
+    <record id="module_stratification_base" model="ir.module.category">
+        <field name="name">Stratification Base Root Menu</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_partner_category" model="ir.module.category">
+        <field name="name">Stratification Res Partner Category</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_partner_industry" model="ir.module.category">
+        <field name="name">Stratification Res Partner Industry</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_users" model="ir.module.category">
+        <field name="name">Stratification Res Users</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_groups" model="ir.module.category">
+        <field name="name">Stratification Res Groups</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_partner_title" model="ir.module.category">
+        <field name="name">Stratification Res Partner Title</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_currency_rate" model="ir.module.category">
+        <field name="name">Stratification Res Currency Rate</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_users_log" model="ir.module.category">
+        <field name="name">Stratification Res Users Log</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_company" model="ir.module.category">
+        <field name="name">Stratification Res Company</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_currency" model="ir.module.category">
+        <field name="name">Stratification Res Currency</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_bank" model="ir.module.category">
+        <field name="name">Stratification Res Bank</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_country" model="ir.module.category">
+        <field name="name">Stratification Res Country</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_partner_bank" model="ir.module.category">
+        <field name="name">Stratification Res Partner Bank</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_country_state" model="ir.module.category">
+        <field name="name">Stratification Res Country State</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_lang" model="ir.module.category">
+        <field name="name">Stratification Res Lang</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_partner" model="ir.module.category">
+        <field name="name">Stratification Res Partner</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_request_link" model="ir.module.category">
+        <field name="name">Stratification Res Request Link</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_res_country_group" model="ir.module.category">
+        <field name="name">Stratification Res Country Group</field>
+        <field name="sequence">200</field>
+    </record>
+
+  </data>
+</odoo>
