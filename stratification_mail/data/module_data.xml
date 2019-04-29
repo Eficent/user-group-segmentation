@@ -9,48 +9,18 @@
         <field name="sequence">200</field>
     </record>
 
-    <record id="model_stratification_mail_alias" model="ir.module.category">
-        <field name="name">Stratification Mail Alias</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_mail_template" model="ir.module.category">
-        <field name="name">Stratification Mail Template</field>
-        <field name="sequence">200</field>
-    </record>
-
     <record id="model_stratification_mail_activity" model="ir.module.category">
         <field name="name">Stratification Mail Activity</field>
         <field name="sequence">200</field>
     </record>
 
-    <record id="model_stratification_mail_shortcode" model="ir.module.category">
-        <field name="name">Stratification Mail Shortcode</field>
+    <record id="model_stratification_mail_activity_type" model="ir.module.category">
+        <field name="name">Stratification Mail Activity Type</field>
         <field name="sequence">200</field>
     </record>
 
-    <record id="model_stratification_mail_tracking_value" model="ir.module.category">
-        <field name="name">Stratification Mail Tracking Value</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_mail_channel_partner" model="ir.module.category">
-        <field name="name">Stratification Mail Channel Partner</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_mail_notification" model="ir.module.category">
-        <field name="name">Stratification Mail Notification</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_mail_message" model="ir.module.category">
-        <field name="name">Stratification Mail Message</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_mail_followers" model="ir.module.category">
-        <field name="name">Stratification Mail Followers</field>
+    <record id="model_stratification_mail_alias" model="ir.module.category">
+        <field name="name">Stratification Mail Alias</field>
         <field name="sequence">200</field>
     </record>
 
@@ -59,8 +29,13 @@
         <field name="sequence">200</field>
     </record>
 
-    <record id="model_stratification_mail_message_subtype" model="ir.module.category">
-        <field name="name">Stratification Mail Message Subtype</field>
+    <record id="model_stratification_mail_channel_partner" model="ir.module.category">
+        <field name="name">Stratification Mail Channel Partner</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_mail_followers" model="ir.module.category">
+        <field name="name">Stratification Mail Followers</field>
         <field name="sequence">200</field>
     </record>
 
@@ -69,8 +44,33 @@
         <field name="sequence">200</field>
     </record>
 
-    <record id="model_stratification_mail_activity_type" model="ir.module.category">
-        <field name="name">Stratification Mail Activity Type</field>
+    <record id="model_stratification_mail_message" model="ir.module.category">
+        <field name="name">Stratification Mail Message</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_mail_message_subtype" model="ir.module.category">
+        <field name="name">Stratification Mail Message Subtype</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_mail_notification" model="ir.module.category">
+        <field name="name">Stratification Mail Notification</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_mail_shortcode" model="ir.module.category">
+        <field name="name">Stratification Mail Shortcode</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_mail_template" model="ir.module.category">
+        <field name="name">Stratification Mail Template</field>
+        <field name="sequence">200</field>
+    </record>
+
+    <record id="model_stratification_mail_tracking_value" model="ir.module.category">
+        <field name="name">Stratification Mail Tracking Value</field>
         <field name="sequence">200</field>
     </record>
 

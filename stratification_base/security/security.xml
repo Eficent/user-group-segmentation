@@ -19,46 +19,10 @@
         <field name="category_id" ref="module_stratification_base"/>
     </record>
 
-    <!-- res.partner.category read group -->
-    <record id="group_stratification_res_partner_category_read" model="res.groups">
-        <field name="name">Stratification Res Partner Category Read</field>
-        <field name="category_id" ref="model_stratification_res_partner_category"/>
-    </record>
-
-    <!-- res.partner.industry read group -->
-    <record id="group_stratification_res_partner_industry_read" model="res.groups">
-        <field name="name">Stratification Res Partner Industry Read</field>
-        <field name="category_id" ref="model_stratification_res_partner_industry"/>
-    </record>
-
-    <!-- res.users read group -->
-    <record id="group_stratification_res_users_read" model="res.groups">
-        <field name="name">Stratification Res Users Read</field>
-        <field name="category_id" ref="model_stratification_res_users"/>
-    </record>
-
-    <!-- res.groups read group -->
-    <record id="group_stratification_res_groups_read" model="res.groups">
-        <field name="name">Stratification Res Groups Read</field>
-        <field name="category_id" ref="model_stratification_res_groups"/>
-    </record>
-
-    <!-- res.partner.title read group -->
-    <record id="group_stratification_res_partner_title_read" model="res.groups">
-        <field name="name">Stratification Res Partner Title Read</field>
-        <field name="category_id" ref="model_stratification_res_partner_title"/>
-    </record>
-
-    <!-- res.currency.rate read group -->
-    <record id="group_stratification_res_currency_rate_read" model="res.groups">
-        <field name="name">Stratification Res Currency Rate Read</field>
-        <field name="category_id" ref="model_stratification_res_currency_rate"/>
-    </record>
-
-    <!-- res.users.log read group -->
-    <record id="group_stratification_res_users_log_read" model="res.groups">
-        <field name="name">Stratification Res Users Log Read</field>
-        <field name="category_id" ref="model_stratification_res_users_log"/>
+    <!-- res.bank read group -->
+    <record id="group_stratification_res_bank_read" model="res.groups">
+        <field name="name">Stratification Res Bank Read</field>
+        <field name="category_id" ref="model_stratification_res_bank"/>
     </record>
 
     <!-- res.company read group -->
@@ -67,34 +31,40 @@
         <field name="category_id" ref="model_stratification_res_company"/>
     </record>
 
-    <!-- res.currency read group -->
-    <record id="group_stratification_res_currency_read" model="res.groups">
-        <field name="name">Stratification Res Currency Read</field>
-        <field name="category_id" ref="model_stratification_res_currency"/>
-    </record>
-
-    <!-- res.bank read group -->
-    <record id="group_stratification_res_bank_read" model="res.groups">
-        <field name="name">Stratification Res Bank Read</field>
-        <field name="category_id" ref="model_stratification_res_bank"/>
-    </record>
-
     <!-- res.country read group -->
     <record id="group_stratification_res_country_read" model="res.groups">
         <field name="name">Stratification Res Country Read</field>
         <field name="category_id" ref="model_stratification_res_country"/>
     </record>
 
-    <!-- res.partner.bank read group -->
-    <record id="group_stratification_res_partner_bank_read" model="res.groups">
-        <field name="name">Stratification Res Partner Bank Read</field>
-        <field name="category_id" ref="model_stratification_res_partner_bank"/>
+    <!-- res.country.group read group -->
+    <record id="group_stratification_res_country_group_read" model="res.groups">
+        <field name="name">Stratification Res Country Group Read</field>
+        <field name="category_id" ref="model_stratification_res_country_group"/>
     </record>
 
     <!-- res.country.state read group -->
     <record id="group_stratification_res_country_state_read" model="res.groups">
         <field name="name">Stratification Res Country State Read</field>
         <field name="category_id" ref="model_stratification_res_country_state"/>
+    </record>
+
+    <!-- res.currency read group -->
+    <record id="group_stratification_res_currency_read" model="res.groups">
+        <field name="name">Stratification Res Currency Read</field>
+        <field name="category_id" ref="model_stratification_res_currency"/>
+    </record>
+
+    <!-- res.currency.rate read group -->
+    <record id="group_stratification_res_currency_rate_read" model="res.groups">
+        <field name="name">Stratification Res Currency Rate Read</field>
+        <field name="category_id" ref="model_stratification_res_currency_rate"/>
+    </record>
+
+    <!-- res.groups read group -->
+    <record id="group_stratification_res_groups_read" model="res.groups">
+        <field name="name">Stratification Res Groups Read</field>
+        <field name="category_id" ref="model_stratification_res_groups"/>
     </record>
 
     <!-- res.lang read group -->
@@ -109,37 +79,95 @@
         <field name="category_id" ref="model_stratification_res_partner"/>
     </record>
 
+    <!-- res.partner.bank read group -->
+    <record id="group_stratification_res_partner_bank_read" model="res.groups">
+        <field name="name">Stratification Res Partner Bank Read</field>
+        <field name="category_id" ref="model_stratification_res_partner_bank"/>
+    </record>
+
+    <!-- res.partner.category read group -->
+    <record id="group_stratification_res_partner_category_read" model="res.groups">
+        <field name="name">Stratification Res Partner Category Read</field>
+        <field name="category_id" ref="model_stratification_res_partner_category"/>
+    </record>
+
+    <!-- res.partner.industry read group -->
+    <record id="group_stratification_res_partner_industry_read" model="res.groups">
+        <field name="name">Stratification Res Partner Industry Read</field>
+        <field name="category_id" ref="model_stratification_res_partner_industry"/>
+    </record>
+
+    <!-- res.partner.title read group -->
+    <record id="group_stratification_res_partner_title_read" model="res.groups">
+        <field name="name">Stratification Res Partner Title Read</field>
+        <field name="category_id" ref="model_stratification_res_partner_title"/>
+    </record>
+
     <!-- res.request.link read group -->
     <record id="group_stratification_res_request_link_read" model="res.groups">
         <field name="name">Stratification Res Request Link Read</field>
         <field name="category_id" ref="model_stratification_res_request_link"/>
     </record>
 
-    <!-- res.country.group read group -->
-    <record id="group_stratification_res_country_group_read" model="res.groups">
-        <field name="name">Stratification Res Country Group Read</field>
-        <field name="category_id" ref="model_stratification_res_country_group"/>
-    </record>
-
-    <!-- res.partner.category view/write groups -->
-    <record id="group_stratification_res_partner_category_write" model="res.groups">
-        <field name="name">Stratification Res Partner Category Write</field>
-        <field name="category_id" ref="model_stratification_res_partner_category"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_partner_category_read'))]"/>
-    </record>
-
-    <!-- res.partner.industry view/write groups -->
-    <record id="group_stratification_res_partner_industry_write" model="res.groups">
-        <field name="name">Stratification Res Partner Industry Write</field>
-        <field name="category_id" ref="model_stratification_res_partner_industry"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_industry_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
-    </record>
-
-    <!-- res.users view/write groups -->
-    <record id="group_stratification_res_users_write" model="res.groups">
-        <field name="name">Stratification Res Users Write</field>
+    <!-- res.users read group -->
+    <record id="group_stratification_res_users_read" model="res.groups">
+        <field name="name">Stratification Res Users Read</field>
         <field name="category_id" ref="model_stratification_res_users"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_groups_read')),(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_partner_title_read')),(4,ref('stratification_base.group_stratification_res_partner_category_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_partner_industry_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_users_log_read'))]"/>
+    </record>
+
+    <!-- res.users.log read group -->
+    <record id="group_stratification_res_users_log_read" model="res.groups">
+        <field name="name">Stratification Res Users Log Read</field>
+        <field name="category_id" ref="model_stratification_res_users_log"/>
+    </record>
+
+    <!-- res.bank view/write groups -->
+    <record id="group_stratification_res_bank_write" model="res.groups">
+        <field name="name">Stratification Res Bank Write</field>
+        <field name="category_id" ref="model_stratification_res_bank"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_bank_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.company view/write groups -->
+    <record id="group_stratification_res_company_write" model="res.groups">
+        <field name="name">Stratification Res Company Write</field>
+        <field name="category_id" ref="model_stratification_res_company"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.country view/write groups -->
+    <record id="group_stratification_res_country_write" model="res.groups">
+        <field name="name">Stratification Res Country Write</field>
+        <field name="category_id" ref="model_stratification_res_country"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_group_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.country.group view/write groups -->
+    <record id="group_stratification_res_country_group_write" model="res.groups">
+        <field name="name">Stratification Res Country Group Write</field>
+        <field name="category_id" ref="model_stratification_res_country_group"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_group_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.country.state view/write groups -->
+    <record id="group_stratification_res_country_state_write" model="res.groups">
+        <field name="name">Stratification Res Country State Write</field>
+        <field name="category_id" ref="model_stratification_res_country_state"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.currency view/write groups -->
+    <record id="group_stratification_res_currency_write" model="res.groups">
+        <field name="name">Stratification Res Currency Write</field>
+        <field name="category_id" ref="model_stratification_res_currency"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_currency_rate_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.currency.rate view/write groups -->
+    <record id="group_stratification_res_currency_rate_write" model="res.groups">
+        <field name="name">Stratification Res Currency Rate Write</field>
+        <field name="category_id" ref="model_stratification_res_currency_rate"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_currency_rate_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
     <!-- res.groups view/write groups -->
@@ -149,18 +177,60 @@
         <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_groups_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
+    <!-- res.lang view/write groups -->
+    <record id="group_stratification_res_lang_write" model="res.groups">
+        <field name="name">Stratification Res Lang Write</field>
+        <field name="category_id" ref="model_stratification_res_lang"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_lang_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.partner view/write groups -->
+    <record id="group_stratification_res_partner_write" model="res.groups">
+        <field name="name">Stratification Res Partner Write</field>
+        <field name="category_id" ref="model_stratification_res_partner"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_partner_category_read')),(4,ref('stratification_base.group_stratification_res_partner_industry_read')),(4,ref('stratification_base.group_stratification_res_partner_title_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.partner.bank view/write groups -->
+    <record id="group_stratification_res_partner_bank_write" model="res.groups">
+        <field name="name">Stratification Res Partner Bank Write</field>
+        <field name="category_id" ref="model_stratification_res_partner_bank"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_bank_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.partner.category view/write groups -->
+    <record id="group_stratification_res_partner_category_write" model="res.groups">
+        <field name="name">Stratification Res Partner Category Write</field>
+        <field name="category_id" ref="model_stratification_res_partner_category"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_partner_category_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.partner.industry view/write groups -->
+    <record id="group_stratification_res_partner_industry_write" model="res.groups">
+        <field name="name">Stratification Res Partner Industry Write</field>
+        <field name="category_id" ref="model_stratification_res_partner_industry"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_industry_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
     <!-- res.partner.title view/write groups -->
     <record id="group_stratification_res_partner_title_write" model="res.groups">
         <field name="name">Stratification Res Partner Title Write</field>
         <field name="category_id" ref="model_stratification_res_partner_title"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_partner_title_read'))]"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_title_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
-    <!-- res.currency.rate view/write groups -->
-    <record id="group_stratification_res_currency_rate_write" model="res.groups">
-        <field name="name">Stratification Res Currency Rate Write</field>
-        <field name="category_id" ref="model_stratification_res_currency_rate"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_currency_rate_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read'))]"/>
+    <!-- res.request.link view/write groups -->
+    <record id="group_stratification_res_request_link_write" model="res.groups">
+        <field name="name">Stratification Res Request Link Write</field>
+        <field name="category_id" ref="model_stratification_res_request_link"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_request_link_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.users view/write groups -->
+    <record id="group_stratification_res_users_write" model="res.groups">
+        <field name="name">Stratification Res Users Write</field>
+        <field name="category_id" ref="model_stratification_res_users"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_groups_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_partner_category_read')),(4,ref('stratification_base.group_stratification_res_partner_industry_read')),(4,ref('stratification_base.group_stratification_res_partner_title_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_users_log_read'))]"/>
     </record>
 
     <!-- res.users.log view/write groups -->
@@ -168,76 +238,6 @@
         <field name="name">Stratification Res Users Log Write</field>
         <field name="category_id" ref="model_stratification_res_users_log"/>
         <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_users_log_read'))]"/>
-    </record>
-
-    <!-- res.company view/write groups -->
-    <record id="group_stratification_res_company_write" model="res.groups">
-        <field name="name">Stratification Res Company Write</field>
-        <field name="category_id" ref="model_stratification_res_company"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read'))]"/>
-    </record>
-
-    <!-- res.currency view/write groups -->
-    <record id="group_stratification_res_currency_write" model="res.groups">
-        <field name="name">Stratification Res Currency Write</field>
-        <field name="category_id" ref="model_stratification_res_currency"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_currency_rate_read'))]"/>
-    </record>
-
-    <!-- res.bank view/write groups -->
-    <record id="group_stratification_res_bank_write" model="res.groups">
-        <field name="name">Stratification Res Bank Write</field>
-        <field name="category_id" ref="model_stratification_res_bank"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_bank_read'))]"/>
-    </record>
-
-    <!-- res.country view/write groups -->
-    <record id="group_stratification_res_country_write" model="res.groups">
-        <field name="name">Stratification Res Country Write</field>
-        <field name="category_id" ref="model_stratification_res_country"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_country_group_read'))]"/>
-    </record>
-
-    <!-- res.partner.bank view/write groups -->
-    <record id="group_stratification_res_partner_bank_write" model="res.groups">
-        <field name="name">Stratification Res Partner Bank Write</field>
-        <field name="category_id" ref="model_stratification_res_partner_bank"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_bank_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read'))]"/>
-    </record>
-
-    <!-- res.country.state view/write groups -->
-    <record id="group_stratification_res_country_state_write" model="res.groups">
-        <field name="name">Stratification Res Country State Write</field>
-        <field name="category_id" ref="model_stratification_res_country_state"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_country_read'))]"/>
-    </record>
-
-    <!-- res.lang view/write groups -->
-    <record id="group_stratification_res_lang_write" model="res.groups">
-        <field name="name">Stratification Res Lang Write</field>
-        <field name="category_id" ref="model_stratification_res_lang"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_lang_read'))]"/>
-    </record>
-
-    <!-- res.partner view/write groups -->
-    <record id="group_stratification_res_partner_write" model="res.groups">
-        <field name="name">Stratification Res Partner Write</field>
-        <field name="category_id" ref="model_stratification_res_partner"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_bank_read')),(4,ref('stratification_base.group_stratification_res_partner_title_read')),(4,ref('stratification_base.group_stratification_res_partner_category_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_partner_industry_read')),(4,ref('stratification_base.group_stratification_res_company_read'))]"/>
-    </record>
-
-    <!-- res.request.link view/write groups -->
-    <record id="group_stratification_res_request_link_write" model="res.groups">
-        <field name="name">Stratification Res Request Link Write</field>
-        <field name="category_id" ref="model_stratification_res_request_link"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_request_link_read'))]"/>
-    </record>
-
-    <!-- res.country.group view/write groups -->
-    <record id="group_stratification_res_country_group_write" model="res.groups">
-        <field name="name">Stratification Res Country Group Write</field>
-        <field name="category_id" ref="model_stratification_res_country_group"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_group_read'))]"/>
     </record>
 
   </data>

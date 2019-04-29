@@ -4,70 +4,10 @@
 <odoo>
   <data>
 
-    <!-- product.packaging read group -->
-    <record id="group_stratification_product_packaging_read" model="res.groups">
-        <field name="name">Stratification Product Packaging Read</field>
-        <field name="category_id" ref="model_stratification_product_packaging"/>
-    </record>
-
     <!-- product.attribute read group -->
     <record id="group_stratification_product_attribute_read" model="res.groups">
         <field name="name">Stratification Product Attribute Read</field>
         <field name="category_id" ref="model_stratification_product_attribute"/>
-    </record>
-
-    <!-- product.uom read group -->
-    <record id="group_stratification_product_uom_read" model="res.groups">
-        <field name="name">Stratification Product Uom Read</field>
-        <field name="category_id" ref="model_stratification_product_uom"/>
-    </record>
-
-    <!-- product.pricelist.item read group -->
-    <record id="group_stratification_product_pricelist_item_read" model="res.groups">
-        <field name="name">Stratification Product Pricelist Item Read</field>
-        <field name="category_id" ref="model_stratification_product_pricelist_item"/>
-    </record>
-
-    <!-- product.pricelist read group -->
-    <record id="group_stratification_product_pricelist_read" model="res.groups">
-        <field name="name">Stratification Product Pricelist Read</field>
-        <field name="category_id" ref="model_stratification_product_pricelist"/>
-    </record>
-
-    <!-- product.uom.categ read group -->
-    <record id="group_stratification_product_uom_categ_read" model="res.groups">
-        <field name="name">Stratification Product Uom Categ Read</field>
-        <field name="category_id" ref="model_stratification_product_uom_categ"/>
-    </record>
-
-    <!-- product.category read group -->
-    <record id="group_stratification_product_category_read" model="res.groups">
-        <field name="name">Stratification Product Category Read</field>
-        <field name="category_id" ref="model_stratification_product_category"/>
-    </record>
-
-    <!-- product.template read group -->
-    <record id="group_stratification_product_template_read" model="res.groups">
-        <field name="name">Stratification Product Template Read</field>
-        <field name="category_id" ref="model_stratification_product_template"/>
-    </record>
-
-    <!-- product.attribute.value read group -->
-    <record id="group_stratification_product_attribute_value_read" model="res.groups">
-        <field name="name">Stratification Product Attribute Value Read</field>
-        <field name="category_id" ref="model_stratification_product_attribute_value"/>
-    </record>
-
-    <!-- product.attribute.price read group -->
-    <record id="group_stratification_product_attribute_price_read" model="res.groups">
-        <field name="name">Stratification Product Attribute Price Read</field>
-        <field name="category_id" ref="model_stratification_product_attribute_price"/>
-    </record>
-
-    <!-- product.supplierinfo read group -->
-    <record id="group_stratification_product_supplierinfo_read" model="res.groups">
-        <field name="name">Stratification Product Supplierinfo Read</field>
-        <field name="category_id" ref="model_stratification_product_supplierinfo"/>
     </record>
 
     <!-- product.attribute.line read group -->
@@ -76,10 +16,46 @@
         <field name="category_id" ref="model_stratification_product_attribute_line"/>
     </record>
 
+    <!-- product.attribute.price read group -->
+    <record id="group_stratification_product_attribute_price_read" model="res.groups">
+        <field name="name">Stratification Product Attribute Price Read</field>
+        <field name="category_id" ref="model_stratification_product_attribute_price"/>
+    </record>
+
+    <!-- product.attribute.value read group -->
+    <record id="group_stratification_product_attribute_value_read" model="res.groups">
+        <field name="name">Stratification Product Attribute Value Read</field>
+        <field name="category_id" ref="model_stratification_product_attribute_value"/>
+    </record>
+
+    <!-- product.category read group -->
+    <record id="group_stratification_product_category_read" model="res.groups">
+        <field name="name">Stratification Product Category Read</field>
+        <field name="category_id" ref="model_stratification_product_category"/>
+    </record>
+
+    <!-- product.packaging read group -->
+    <record id="group_stratification_product_packaging_read" model="res.groups">
+        <field name="name">Stratification Product Packaging Read</field>
+        <field name="category_id" ref="model_stratification_product_packaging"/>
+    </record>
+
     <!-- product.price.history read group -->
     <record id="group_stratification_product_price_history_read" model="res.groups">
         <field name="name">Stratification Product Price History Read</field>
         <field name="category_id" ref="model_stratification_product_price_history"/>
+    </record>
+
+    <!-- product.pricelist read group -->
+    <record id="group_stratification_product_pricelist_read" model="res.groups">
+        <field name="name">Stratification Product Pricelist Read</field>
+        <field name="category_id" ref="model_stratification_product_pricelist"/>
+    </record>
+
+    <!-- product.pricelist.item read group -->
+    <record id="group_stratification_product_pricelist_item_read" model="res.groups">
+        <field name="name">Stratification Product Pricelist Item Read</field>
+        <field name="category_id" ref="model_stratification_product_pricelist_item"/>
     </record>
 
     <!-- product.product read group -->
@@ -88,70 +64,68 @@
         <field name="category_id" ref="model_stratification_product_product"/>
     </record>
 
-    <!-- product.packaging view/write groups -->
-    <record id="group_stratification_product_packaging_menu" model="res.groups">
-        <field name="name">Stratification Product Packaging Menu</field>
-        <field name="category_id" ref="model_stratification_product_packaging"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
+    <!-- product.supplierinfo read group -->
+    <record id="group_stratification_product_supplierinfo_read" model="res.groups">
+        <field name="name">Stratification Product Supplierinfo Read</field>
+        <field name="category_id" ref="model_stratification_product_supplierinfo"/>
     </record>
 
-    <record id="group_stratification_product_packaging_write" model="res.groups">
-        <field name="name">Stratification Product Packaging Write</field>
-        <field name="category_id" ref="model_stratification_product_packaging"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
+    <!-- product.template read group -->
+    <record id="group_stratification_product_template_read" model="res.groups">
+        <field name="name">Stratification Product Template Read</field>
+        <field name="category_id" ref="model_stratification_product_template"/>
+    </record>
+
+    <!-- product.uom read group -->
+    <record id="group_stratification_product_uom_read" model="res.groups">
+        <field name="name">Stratification Product Uom Read</field>
+        <field name="category_id" ref="model_stratification_product_uom"/>
+    </record>
+
+    <!-- product.uom.categ read group -->
+    <record id="group_stratification_product_uom_categ_read" model="res.groups">
+        <field name="name">Stratification Product Uom Categ Read</field>
+        <field name="category_id" ref="model_stratification_product_uom_categ"/>
     </record>
 
     <!-- product.attribute view/write groups -->
     <record id="group_stratification_product_attribute_menu" model="res.groups">
         <field name="name">Stratification Product Attribute Menu</field>
         <field name="category_id" ref="model_stratification_product_attribute"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_attribute_read'))]"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read'))]"/>
     </record>
 
     <record id="group_stratification_product_attribute_write" model="res.groups">
         <field name="name">Stratification Product Attribute Write</field>
         <field name="category_id" ref="model_stratification_product_attribute"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_attribute_read'))]"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
-    <!-- product.uom view/write groups -->
-    <record id="group_stratification_product_uom_menu" model="res.groups">
-        <field name="name">Stratification Product Uom Menu</field>
-        <field name="category_id" ref="model_stratification_product_uom"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_uom_categ_read')),(4,ref('stratification_product.group_stratification_product_uom_read'))]"/>
+    <!-- product.attribute.line view/write groups -->
+    <record id="group_stratification_product_attribute_line_write" model="res.groups">
+        <field name="name">Stratification Product Attribute Line Write</field>
+        <field name="category_id" ref="model_stratification_product_attribute_line"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
-    <record id="group_stratification_product_uom_write" model="res.groups">
-        <field name="name">Stratification Product Uom Write</field>
-        <field name="category_id" ref="model_stratification_product_uom"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_uom_categ_read')),(4,ref('stratification_product.group_stratification_product_uom_read'))]"/>
+    <!-- product.attribute.price view/write groups -->
+    <record id="group_stratification_product_attribute_price_write" model="res.groups">
+        <field name="name">Stratification Product Attribute Price Write</field>
+        <field name="category_id" ref="model_stratification_product_attribute_price"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_price_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
-    <!-- product.pricelist.item view/write groups -->
-    <record id="group_stratification_product_pricelist_item_write" model="res.groups">
-        <field name="name">Stratification Product Pricelist Item Write</field>
-        <field name="category_id" ref="model_stratification_product_pricelist_item"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
+    <!-- product.attribute.value view/write groups -->
+    <record id="group_stratification_product_attribute_value_menu" model="res.groups">
+        <field name="name">Stratification Product Attribute Value Menu</field>
+        <field name="category_id" ref="model_stratification_product_attribute_value"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read'))]"/>
     </record>
 
-    <!-- product.pricelist view/write groups -->
-    <record id="group_stratification_product_pricelist_write" model="res.groups">
-        <field name="name">Stratification Product Pricelist Write</field>
-        <field name="category_id" ref="model_stratification_product_pricelist"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_country_group_read'))]"/>
-    </record>
-
-    <!-- product.uom.categ view/write groups -->
-    <record id="group_stratification_product_uom_categ_menu" model="res.groups">
-        <field name="name">Stratification Product Uom Categ Menu</field>
-        <field name="category_id" ref="model_stratification_product_uom_categ"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_uom_categ_read'))]"/>
-    </record>
-
-    <record id="group_stratification_product_uom_categ_write" model="res.groups">
-        <field name="name">Stratification Product Uom Categ Write</field>
-        <field name="category_id" ref="model_stratification_product_uom_categ"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_uom_categ_read'))]"/>
+    <record id="group_stratification_product_attribute_value_write" model="res.groups">
+        <field name="name">Stratification Product Attribute Value Write</field>
+        <field name="category_id" ref="model_stratification_product_attribute_value"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_read')),(4,ref('stratification_product.group_stratification_product_attribute_price_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
     <!-- product.category view/write groups -->
@@ -164,74 +138,115 @@
     <record id="group_stratification_product_category_write" model="res.groups">
         <field name="name">Stratification Product Category Write</field>
         <field name="category_id" ref="model_stratification_product_category"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_category_read'))]"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
-    <!-- product.template view/write groups -->
-    <record id="group_stratification_product_template_menu" model="res.groups">
-        <field name="name">Stratification Product Template Menu</field>
-        <field name="category_id" ref="model_stratification_product_template"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_activity_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
+    <!-- product.packaging view/write groups -->
+    <record id="group_stratification_product_packaging_menu" model="res.groups">
+        <field name="name">Stratification Product Packaging Menu</field>
+        <field name="category_id" ref="model_stratification_product_packaging"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
     </record>
 
-    <record id="group_stratification_product_template_write" model="res.groups">
-        <field name="name">Stratification Product Template Write</field>
-        <field name="category_id" ref="model_stratification_product_template"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_supplierinfo_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
-    </record>
-
-    <!-- product.attribute.value view/write groups -->
-    <record id="group_stratification_product_attribute_value_menu" model="res.groups">
-        <field name="name">Stratification Product Attribute Value Menu</field>
-        <field name="category_id" ref="model_stratification_product_attribute_value"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_attribute_read'))]"/>
-    </record>
-
-    <record id="group_stratification_product_attribute_value_write" model="res.groups">
-        <field name="name">Stratification Product Attribute Value Write</field>
-        <field name="category_id" ref="model_stratification_product_attribute_value"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_price_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_attribute_read'))]"/>
-    </record>
-
-    <!-- product.attribute.price view/write groups -->
-    <record id="group_stratification_product_attribute_price_write" model="res.groups">
-        <field name="name">Stratification Product Attribute Price Write</field>
-        <field name="category_id" ref="model_stratification_product_attribute_price"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_attribute_price_read')),(4,ref('stratification_product.group_stratification_product_template_read'))]"/>
-    </record>
-
-    <!-- product.supplierinfo view/write groups -->
-    <record id="group_stratification_product_supplierinfo_write" model="res.groups">
-        <field name="name">Stratification Product Supplierinfo Write</field>
-        <field name="category_id" ref="model_stratification_product_supplierinfo"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_supplierinfo_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
-    </record>
-
-    <!-- product.attribute.line view/write groups -->
-    <record id="group_stratification_product_attribute_line_write" model="res.groups">
-        <field name="name">Stratification Product Attribute Line Write</field>
-        <field name="category_id" ref="model_stratification_product_attribute_line"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_attribute_read'))]"/>
+    <record id="group_stratification_product_packaging_write" model="res.groups">
+        <field name="name">Stratification Product Packaging Write</field>
+        <field name="category_id" ref="model_stratification_product_packaging"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
     <!-- product.price.history view/write groups -->
     <record id="group_stratification_product_price_history_write" model="res.groups">
         <field name="name">Stratification Product Price History Write</field>
         <field name="category_id" ref="model_stratification_product_price_history"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_product.group_stratification_product_price_history_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_price_history_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- product.pricelist view/write groups -->
+    <record id="group_stratification_product_pricelist_write" model="res.groups">
+        <field name="name">Stratification Product Pricelist Write</field>
+        <field name="category_id" ref="model_stratification_product_pricelist"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_country_group_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- product.pricelist.item view/write groups -->
+    <record id="group_stratification_product_pricelist_item_write" model="res.groups">
+        <field name="name">Stratification Product Pricelist Item Write</field>
+        <field name="category_id" ref="model_stratification_product_pricelist_item"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
     <!-- product.product view/write groups -->
     <record id="group_stratification_product_product_menu" model="res.groups">
         <field name="name">Stratification Product Product Menu</field>
         <field name="category_id" ref="model_stratification_product_product"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_currency_read'))]"/>
     </record>
 
     <record id="group_stratification_product_product_write" model="res.groups">
         <field name="name">Stratification Product Product Write</field>
         <field name="category_id" ref="model_stratification_product_product"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_supplierinfo_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_product.group_stratification_product_product_read'))]"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_supplierinfo_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- product.supplierinfo view/write groups -->
+    <record id="group_stratification_product_supplierinfo_write" model="res.groups">
+        <field name="name">Stratification Product Supplierinfo Write</field>
+        <field name="category_id" ref="model_stratification_product_supplierinfo"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_supplierinfo_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- product.template view/write groups -->
+    <record id="group_stratification_product_template_menu" model="res.groups">
+        <field name="name">Stratification Product Template Menu</field>
+        <field name="category_id" ref="model_stratification_product_template"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_activity_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read'))]"/>
+    </record>
+
+    <record id="group_stratification_product_template_write" model="res.groups">
+        <field name="name">Stratification Product Template Write</field>
+        <field name="category_id" ref="model_stratification_product_template"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_supplierinfo_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- product.uom view/write groups -->
+    <record id="group_stratification_product_uom_menu" model="res.groups">
+        <field name="name">Stratification Product Uom Menu</field>
+        <field name="category_id" ref="model_stratification_product_uom"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_product.group_stratification_product_uom_categ_read'))]"/>
+    </record>
+
+    <record id="group_stratification_product_uom_write" model="res.groups">
+        <field name="name">Stratification Product Uom Write</field>
+        <field name="category_id" ref="model_stratification_product_uom"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_product.group_stratification_product_uom_categ_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- product.uom.categ view/write groups -->
+    <record id="group_stratification_product_uom_categ_menu" model="res.groups">
+        <field name="name">Stratification Product Uom Categ Menu</field>
+        <field name="category_id" ref="model_stratification_product_uom_categ"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_uom_categ_read'))]"/>
+    </record>
+
+    <record id="group_stratification_product_uom_categ_write" model="res.groups">
+        <field name="name">Stratification Product Uom Categ Write</field>
+        <field name="category_id" ref="model_stratification_product_uom_categ"/>
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_uom_categ_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    </record>
+
+    <!-- res.country.group view/write groups -->
+    <record id="group_stratification_res_country_group_write" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_base.group_stratification_res_country_group_read'))]"/>
+    </record>
+
+    <!-- res.partner view/write groups -->
+    <record id="group_stratification_res_partner_write" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_base.group_stratification_res_partner_read'))]"/>
+    </record>
+
+    <!-- res.users view/write groups -->
+    <record id="group_stratification_res_users_write" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
     </record>
 
   </data>
