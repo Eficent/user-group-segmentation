@@ -6,10 +6,10 @@
 
     <template id="webclient_bootstrap" inherit_id="web.webclient_bootstrap">
         <xpath expr="//nav[@id='oe_main_menu_navbar']" position="attributes">
-            <attribute name="groups">base.group_user,base.group_portal,stratification.group_basic_user</attribute>
+            <attribute name="groups">base.group_user,base.group_portal,stratification_base.group_basic_user</attribute>
         </xpath>
         <xpath expr="//div[hasclass('o_main')]/div[hasclass('o_sub_menu')]" position="attributes">
-            <attribute name="groups">base.group_user,base.group_portal,stratification.group_basic_user</attribute>
+            <attribute name="groups">base.group_user,base.group_portal,stratification_base.group_basic_user</attribute>
         </xpath>
     </template>
 

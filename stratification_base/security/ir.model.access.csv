@@ -17,7 +17,6 @@ access_res_partner_category_group_basic_user,res_partner_category group_basic_us
 access_res_partner_industry_group_basic_user,res_partner_industry group_basic_user,base.model_res_partner_industry,group_basic_user,1,0,0,0
 access_res_bank_basic_user,res_bank group_basic_user,base.model_res_bank,group_basic_user,1,0,0,0
 access_ir_filter_basic_user,ir_filters group_basic_user,base.model_ir_filters,group_basic_user,1,1,1,1
-
 access_stratification_res_bank_read,stratification res.bank read,base.model_res_bank,stratification_base.group_stratification_res_bank_read,1,0,0,0
 access_stratification_res_bank_write,stratification res.bank write,base.model_res_bank,stratification_base.group_stratification_res_bank_write,0,1,1,1
 access_stratification_res_company_read,stratification res.company read,base.model_res_company,stratification_base.group_stratification_res_company_read,1,0,0,0
