@@ -4,403 +4,486 @@
 <odoo>
   <data>
 
-    <!-- stock root menu -->
-    <record id="group_stratification_stock_root_menu" model="res.groups">
-        <field name="name">Stratification Stock Root Menu</field>
+    <!-- menu_stock_root menu group -->
+    <record id="group_stratification_stock_menu_stock_root_menu" model="res.groups">
+        <field name="name">Stratification Stock - Inventory Menu</field>
         <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- procurement.group read group -->
-    <record id="group_stratification_procurement_group_read" model="res.groups">
-        <field name="name">Stratification Procurement Group Read</field>
-        <field name="category_id" ref="model_stratification_procurement_group"/>
-    </record>
-
-    <!-- procurement.rule read group -->
+    <!-- procurement.rule model groups -->
     <record id="group_stratification_procurement_rule_read" model="res.groups">
-        <field name="name">Stratification Procurement Rule Read</field>
-        <field name="category_id" ref="model_stratification_procurement_rule"/>
+        <field name="name">Stratification Stock - procurement.rule Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- product.putaway read group -->
-    <record id="group_stratification_product_putaway_read" model="res.groups">
-        <field name="name">Stratification Product Putaway Read</field>
-        <field name="category_id" ref="model_stratification_product_putaway"/>
-    </record>
-
-    <!-- product.removal read group -->
-    <record id="group_stratification_product_removal_read" model="res.groups">
-        <field name="name">Stratification Product Removal Read</field>
-        <field name="category_id" ref="model_stratification_product_removal"/>
-    </record>
-
-    <!-- stock.fixed.putaway.strat read group -->
-    <record id="group_stratification_stock_fixed_putaway_strat_read" model="res.groups">
-        <field name="name">Stratification Stock Fixed Putaway Strat Read</field>
-        <field name="category_id" ref="model_stratification_stock_fixed_putaway_strat"/>
-    </record>
-
-    <!-- stock.incoterms read group -->
-    <record id="group_stratification_stock_incoterms_read" model="res.groups">
-        <field name="name">Stratification Stock Incoterms Read</field>
-        <field name="category_id" ref="model_stratification_stock_incoterms"/>
-    </record>
-
-    <!-- stock.inventory read group -->
-    <record id="group_stratification_stock_inventory_read" model="res.groups">
-        <field name="name">Stratification Stock Inventory Read</field>
-        <field name="category_id" ref="model_stratification_stock_inventory"/>
-    </record>
-
-    <!-- stock.inventory.line read group -->
-    <record id="group_stratification_stock_inventory_line_read" model="res.groups">
-        <field name="name">Stratification Stock Inventory Line Read</field>
-        <field name="category_id" ref="model_stratification_stock_inventory_line"/>
-    </record>
-
-    <!-- stock.location read group -->
-    <record id="group_stratification_stock_location_read" model="res.groups">
-        <field name="name">Stratification Stock Location Read</field>
-        <field name="category_id" ref="model_stratification_stock_location"/>
-    </record>
-
-    <!-- stock.location.path read group -->
-    <record id="group_stratification_stock_location_path_read" model="res.groups">
-        <field name="name">Stratification Stock Location Path Read</field>
-        <field name="category_id" ref="model_stratification_stock_location_path"/>
-    </record>
-
-    <!-- stock.location.route read group -->
-    <record id="group_stratification_stock_location_route_read" model="res.groups">
-        <field name="name">Stratification Stock Location Route Read</field>
-        <field name="category_id" ref="model_stratification_stock_location_route"/>
-    </record>
-
-    <!-- stock.move read group -->
-    <record id="group_stratification_stock_move_read" model="res.groups">
-        <field name="name">Stratification Stock Move Read</field>
-        <field name="category_id" ref="model_stratification_stock_move"/>
-    </record>
-
-    <!-- stock.move.line read group -->
-    <record id="group_stratification_stock_move_line_read" model="res.groups">
-        <field name="name">Stratification Stock Move Line Read</field>
-        <field name="category_id" ref="model_stratification_stock_move_line"/>
-    </record>
-
-    <!-- stock.picking read group -->
-    <record id="group_stratification_stock_picking_read" model="res.groups">
-        <field name="name">Stratification Stock Picking Read</field>
-        <field name="category_id" ref="model_stratification_stock_picking"/>
-    </record>
-
-    <!-- stock.picking.type read group -->
-    <record id="group_stratification_stock_picking_type_read" model="res.groups">
-        <field name="name">Stratification Stock Picking Type Read</field>
-        <field name="category_id" ref="model_stratification_stock_picking_type"/>
-    </record>
-
-    <!-- stock.production.lot read group -->
-    <record id="group_stratification_stock_production_lot_read" model="res.groups">
-        <field name="name">Stratification Stock Production Lot Read</field>
-        <field name="category_id" ref="model_stratification_stock_production_lot"/>
-    </record>
-
-    <!-- stock.quant read group -->
-    <record id="group_stratification_stock_quant_read" model="res.groups">
-        <field name="name">Stratification Stock Quant Read</field>
-        <field name="category_id" ref="model_stratification_stock_quant"/>
-    </record>
-
-    <!-- stock.quant.package read group -->
-    <record id="group_stratification_stock_quant_package_read" model="res.groups">
-        <field name="name">Stratification Stock Quant Package Read</field>
-        <field name="category_id" ref="model_stratification_stock_quant_package"/>
-    </record>
-
-    <!-- stock.scrap read group -->
-    <record id="group_stratification_stock_scrap_read" model="res.groups">
-        <field name="name">Stratification Stock Scrap Read</field>
-        <field name="category_id" ref="model_stratification_stock_scrap"/>
-    </record>
-
-    <!-- stock.warehouse read group -->
-    <record id="group_stratification_stock_warehouse_read" model="res.groups">
-        <field name="name">Stratification Stock Warehouse Read</field>
-        <field name="category_id" ref="model_stratification_stock_warehouse"/>
-    </record>
-
-    <!-- stock.warehouse.orderpoint read group -->
-    <record id="group_stratification_stock_warehouse_orderpoint_read" model="res.groups">
-        <field name="name">Stratification Stock Warehouse Orderpoint Read</field>
-        <field name="category_id" ref="model_stratification_stock_warehouse_orderpoint"/>
-    </record>
-
-    <!-- procurement.group view/write groups -->
-    <record id="group_stratification_procurement_group_write" model="res.groups">
-        <field name="name">Stratification Procurement Group Write</field>
-        <field name="category_id" ref="model_stratification_procurement_group"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
-    </record>
-
-    <!-- procurement.rule view/write groups -->
     <record id="group_stratification_procurement_rule_write" model="res.groups">
-        <field name="name">Stratification Procurement Rule Write</field>
-        <field name="category_id" ref="model_stratification_procurement_rule"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_stock.group_stratification_procurement_rule_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+        <field name="name">Stratification Stock - procurement.rule Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- product.category view/write groups -->
-    <record id="group_stratification_product_category_menu" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_stock.group_stratification_product_removal_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read'))]"/>
+    <!-- product.putaway model groups -->
+    <record id="group_stratification_product_putaway_read" model="res.groups">
+        <field name="name">Stratification Stock - product.putaway Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <record id="group_stratification_product_category_write" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_stock.group_stratification_product_removal_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read'))]"/>
-    </record>
-
-    <!-- product.product view/write groups -->
-    <record id="group_stratification_product_product_menu" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
-    </record>
-
-    <record id="group_stratification_product_product_write" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_quant_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_orderpoint_read'))]"/>
-    </record>
-
-    <!-- product.putaway view/write groups -->
     <record id="group_stratification_product_putaway_write" model="res.groups">
-        <field name="name">Stratification Product Putaway Write</field>
-        <field name="category_id" ref="model_stratification_product_putaway"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_product_putaway_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_fixed_putaway_strat_read'))]"/>
+        <field name="name">Stratification Stock - product.putaway Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- product.removal view/write groups -->
-    <record id="group_stratification_product_removal_write" model="res.groups">
-        <field name="name">Stratification Product Removal Write</field>
-        <field name="category_id" ref="model_stratification_product_removal"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_product_removal_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    <!-- stock.inventory model groups -->
+    <record id="group_stratification_stock_inventory_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.inventory Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- product.template view/write groups -->
-    <record id="group_stratification_product_template_menu" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_activity_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
-    </record>
-
-    <record id="group_stratification_product_template_write" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
-    </record>
-
-    <!-- res.company view/write groups -->
-    <record id="group_stratification_res_company_write" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_stock.group_stratification_stock_location_read'))]"/>
-    </record>
-
-    <!-- res.partner view/write groups -->
-    <record id="group_stratification_res_partner_write" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read'))]"/>
-    </record>
-
-    <!-- res.users view/write groups -->
-    <record id="group_stratification_res_users_write" model="res.groups">
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read'))]"/>
-    </record>
-
-    <!-- stock.fixed.putaway.strat view/write groups -->
-    <record id="group_stratification_stock_fixed_putaway_strat_write" model="res.groups">
-        <field name="name">Stratification Stock Fixed Putaway Strat Write</field>
-        <field name="category_id" ref="model_stratification_stock_fixed_putaway_strat"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_stock.group_stratification_product_putaway_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_fixed_putaway_strat_read')),(4,ref('stratification_stock.group_stratification_stock_location_read'))]"/>
-    </record>
-
-    <!-- stock.incoterms view/write groups -->
-    <record id="group_stratification_stock_incoterms_menu" model="res.groups">
-        <field name="name">Stratification Stock Incoterms Menu</field>
-        <field name="category_id" ref="model_stratification_stock_incoterms"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_stock_incoterms_read'))]"/>
-    </record>
-
-    <record id="group_stratification_stock_incoterms_write" model="res.groups">
-        <field name="name">Stratification Stock Incoterms Write</field>
-        <field name="category_id" ref="model_stratification_stock_incoterms"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_incoterms_read'))]"/>
-    </record>
-
-    <!-- stock.inventory view/write groups -->
-    <record id="group_stratification_stock_inventory_menu" model="res.groups">
-        <field name="name">Stratification Stock Inventory Menu</field>
-        <field name="category_id" ref="model_stratification_stock_inventory"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_line_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    <record id="group_stratification_stock_inventory_menu_action_inventory_form_menu" model="res.groups">
+        <field name="name">Stratification Stock - Inventory Adjustments Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_inventory_write" model="res.groups">
-        <field name="name">Stratification Stock Inventory Write</field>
-        <field name="category_id" ref="model_stratification_stock_inventory"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_line_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+        <field name="name">Stratification Stock - stock.inventory Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.inventory.line view/write groups -->
+    <!-- stock.inventory.line model groups -->
+    <record id="group_stratification_stock_inventory_line_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.inventory.line Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
     <record id="group_stratification_stock_inventory_line_write" model="res.groups">
-        <field name="name">Stratification Stock Inventory Line Write</field>
-        <field name="category_id" ref="model_stratification_stock_inventory_line"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_line_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+        <field name="name">Stratification Stock - stock.inventory.line Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.location view/write groups -->
-    <record id="group_stratification_stock_location_menu" model="res.groups">
-        <field name="name">Stratification Stock Location Menu</field>
-        <field name="category_id" ref="model_stratification_stock_location"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_product_putaway_read')),(4,ref('stratification_stock.group_stratification_product_removal_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read'))]"/>
+    <!-- stock.location model groups -->
+    <record id="group_stratification_stock_location_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.location Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_location_menu_action_location_form_menu" model="res.groups">
+        <field name="name">Stratification Stock - Locations Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_location_write" model="res.groups">
-        <field name="name">Stratification Stock Location Write</field>
-        <field name="category_id" ref="model_stratification_stock_location"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_product_putaway_read')),(4,ref('stratification_stock.group_stratification_product_removal_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_quant_read'))]"/>
+        <field name="name">Stratification Stock - stock.location Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.location.path view/write groups -->
+    <!-- stock.location.path model groups -->
+    <record id="group_stratification_stock_location_path_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.location.path Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
     <record id="group_stratification_stock_location_path_write" model="res.groups">
-        <field name="name">Stratification Stock Location Path Write</field>
-        <field name="category_id" ref="model_stratification_stock_location_path"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_path_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+        <field name="name">Stratification Stock - stock.location.path Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.location.route view/write groups -->
-    <record id="group_stratification_stock_location_route_menu" model="res.groups">
-        <field name="name">Stratification Stock Location Route Menu</field>
-        <field name="category_id" ref="model_stratification_stock_location_route"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_rule_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_stock.group_stratification_stock_location_path_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    <!-- stock.location.route model groups -->
+    <record id="group_stratification_stock_location_route_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.location.route Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_location_route_menu_routes_config_menu" model="res.groups">
+        <field name="name">Stratification Stock - Routes Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_location_route_write" model="res.groups">
-        <field name="name">Stratification Stock Location Route Write</field>
-        <field name="category_id" ref="model_stratification_stock_location_route"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_rule_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_path_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+        <field name="name">Stratification Stock - stock.location.route Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.move view/write groups -->
-    <record id="group_stratification_stock_move_menu" model="res.groups">
-        <field name="name">Stratification Stock Move Menu</field>
-        <field name="category_id" ref="model_stratification_stock_move"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read'))]"/>
+    <!-- stock.move model groups -->
+    <record id="group_stratification_stock_move_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.move Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_move_stock_move_menu_menu" model="res.groups">
+        <field name="name">Stratification Stock - Stock Moves Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_move_write" model="res.groups">
-        <field name="name">Stratification Stock Move Write</field>
-        <field name="category_id" ref="model_stratification_stock_move"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_stock.group_stratification_procurement_rule_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_path_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_scrap_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+        <field name="name">Stratification Stock - stock.move Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.move.line view/write groups -->
-    <record id="group_stratification_stock_move_line_menu" model="res.groups">
-        <field name="name">Stratification Stock Move Line Menu</field>
-        <field name="category_id" ref="model_stratification_stock_move_line"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    <!-- stock.move.line model groups -->
+    <record id="group_stratification_stock_move_line_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.move.line Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_move_line_stock_move_line_menu_menu" model="res.groups">
+        <field name="name">Stratification Stock - Product Moves Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_move_line_write" model="res.groups">
-        <field name="name">Stratification Stock Move Line Write</field>
-        <field name="category_id" ref="model_stratification_stock_move_line"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+        <field name="name">Stratification Stock - stock.move.line Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.picking view/write groups -->
-    <record id="group_stratification_stock_picking_menu" model="res.groups">
-        <field name="name">Stratification Stock Picking Menu</field>
-        <field name="category_id" ref="model_stratification_stock_picking"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_activity_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    <!-- stock.picking model groups -->
+    <record id="group_stratification_stock_picking_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.picking Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_picking_all_picking_menu" model="res.groups">
+        <field name="name">Stratification Stock - Transfers Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_picking_write" model="res.groups">
-        <field name="name">Stratification Stock Picking Write</field>
-        <field name="category_id" ref="model_stratification_stock_picking"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+        <field name="name">Stratification Stock - stock.picking Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.picking.type view/write groups -->
-    <record id="group_stratification_stock_picking_type_menu" model="res.groups">
-        <field name="name">Stratification Stock Picking Type Menu</field>
-        <field name="category_id" ref="model_stratification_stock_picking_type"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_barcodes.group_stratification_barcode_nomenclature_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    <!-- stock.picking.type model groups -->
+    <record id="group_stratification_stock_picking_type_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.picking.type Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_picking_type_stock_picking_type_menu_menu" model="res.groups">
+        <field name="name">Stratification Stock - Dashboard Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_picking_type_menu_pickingtype_menu" model="res.groups">
+        <field name="name">Stratification Stock - Operations Types Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_picking_type_write" model="res.groups">
-        <field name="name">Stratification Stock Picking Type Write</field>
-        <field name="category_id" ref="model_stratification_stock_picking_type"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_barcodes.group_stratification_barcode_nomenclature_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+        <field name="name">Stratification Stock - stock.picking.type Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.production.lot view/write groups -->
-    <record id="group_stratification_stock_production_lot_menu" model="res.groups">
-        <field name="name">Stratification Stock Production Lot Menu</field>
-        <field name="category_id" ref="model_stratification_stock_production_lot"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read'))]"/>
+    <!-- stock.quant model groups -->
+    <record id="group_stratification_stock_quant_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.quant Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <record id="group_stratification_stock_production_lot_write" model="res.groups">
-        <field name="name">Stratification Stock Production Lot Write</field>
-        <field name="category_id" ref="model_stratification_stock_production_lot"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_read'))]"/>
-    </record>
-
-    <!-- stock.quant view/write groups -->
     <record id="group_stratification_stock_quant_write" model="res.groups">
-        <field name="name">Stratification Stock Quant Write</field>
-        <field name="category_id" ref="model_stratification_stock_quant"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+        <field name="name">Stratification Stock - stock.quant Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.quant.package view/write groups -->
-    <record id="group_stratification_stock_quant_package_menu" model="res.groups">
-        <field name="name">Stratification Stock Quant Package Menu</field>
-        <field name="category_id" ref="model_stratification_stock_quant_package"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    <!-- stock.quant.package model groups -->
+    <record id="group_stratification_stock_quant_package_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.quant.package Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_quant_package_menu_package_menu" model="res.groups">
+        <field name="name">Stratification Stock - Packages Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_quant_package_write" model="res.groups">
-        <field name="name">Stratification Stock Quant Package Write</field>
-        <field name="category_id" ref="model_stratification_stock_quant_package"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_quant_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+        <field name="name">Stratification Stock - stock.quant.package Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.scrap view/write groups -->
-    <record id="group_stratification_stock_scrap_menu" model="res.groups">
-        <field name="name">Stratification Stock Scrap Menu</field>
-        <field name="category_id" ref="model_stratification_stock_scrap"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read')),(4,ref('stratification_stock.group_stratification_stock_scrap_read'))]"/>
+    <!-- stock.scrap model groups -->
+    <record id="group_stratification_stock_scrap_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.scrap Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_scrap_menu_stock_scrap_menu" model="res.groups">
+        <field name="name">Stratification Stock - Scrap Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_scrap_write" model="res.groups">
-        <field name="name">Stratification Stock Scrap Write</field>
-        <field name="category_id" ref="model_stratification_stock_scrap"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read')),(4,ref('stratification_stock.group_stratification_stock_scrap_read'))]"/>
+        <field name="name">Stratification Stock - stock.scrap Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.warehouse view/write groups -->
-    <record id="group_stratification_stock_warehouse_menu" model="res.groups">
-        <field name="name">Stratification Stock Warehouse Menu</field>
-        <field name="category_id" ref="model_stratification_stock_warehouse"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    <!-- stock.warehouse model groups -->
+    <record id="group_stratification_stock_warehouse_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.warehouse Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_warehouse_menu_action_warehouse_form_menu" model="res.groups">
+        <field name="name">Stratification Stock - Warehouses Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_warehouse_write" model="res.groups">
-        <field name="name">Stratification Stock Warehouse Write</field>
-        <field name="category_id" ref="model_stratification_stock_warehouse"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_rule_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+        <field name="name">Stratification Stock - stock.warehouse Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
-    <!-- stock.warehouse.orderpoint view/write groups -->
-    <record id="group_stratification_stock_warehouse_orderpoint_menu" model="res.groups">
-        <field name="name">Stratification Stock Warehouse Orderpoint Menu</field>
-        <field name="category_id" ref="model_stratification_stock_warehouse_orderpoint"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_orderpoint_read'))]"/>
+    <!-- stock.warehouse.orderpoint model groups -->
+    <record id="group_stratification_stock_warehouse_orderpoint_read" model="res.groups">
+        <field name="name">Stratification Stock - stock.warehouse.orderpoint Read</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <record id="group_stratification_stock_warehouse_orderpoint_menu_reordering_rules_config_menu" model="res.groups">
+        <field name="name">Stratification Stock - Reordering Rules Menu</field>
+        <field name="category_id" ref="module_stratification_stock"/>
     </record>
 
     <record id="group_stratification_stock_warehouse_orderpoint_write" model="res.groups">
-        <field name="name">Stratification Stock Warehouse Orderpoint Write</field>
-        <field name="category_id" ref="model_stratification_stock_warehouse_orderpoint"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_orderpoint_read'))]"/>
+        <field name="name">Stratification Stock - stock.warehouse.orderpoint Write</field>
+        <field name="category_id" ref="module_stratification_stock"/>
+    </record>
+
+    <!-- procurement.rule model groups -->
+    <record id="stratification_stock.group_stratification_procurement_rule_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_procurement_rule_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_procurement_rule_read'))]"/>
+    </record>
+
+    <!-- product.category model groups -->
+    <record id="stratification_stock.group_stratification_product_category_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_product_removal_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_product_category_menu_product_category_config_stock_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_product_category_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_product_category_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_product_category_read'))]"/>
+    </record>
+
+    <!-- product.product model groups -->
+    <record id="stratification_stock.group_stratification_product_product_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_attribute_value_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_product_product_product_product_menu_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_product_product_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_product_product_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_product_product_read'))]"/>
+    </record>
+
+    <!-- product.putaway model groups -->
+    <record id="stratification_stock.group_stratification_product_putaway_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_stock.group_stratification_stock_fixed_putaway_strat_read')),(4,ref('stratification_stock.group_stratification_stock_location_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_product_putaway_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_product_putaway_read'))]"/>
+    </record>
+
+    <!-- product.template model groups -->
+    <record id="stratification_stock.group_stratification_product_template_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_activity_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_product.group_stratification_product_attribute_line_read')),(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_pricelist_read')),(4,ref('stratification_product.group_stratification_product_pricelist_item_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_currency_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_location_route_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_product_template_menu_product_variant_config_stock_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_product_template_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_product_template_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_product_template_read'))]"/>
+    </record>
+
+    <!-- res.partner model groups -->
+    <record id="stratification_stock.group_stratification_res_partner_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_activity_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_country_read')),(4,ref('stratification_base.group_stratification_res_country_state_read')),(4,ref('stratification_base.group_stratification_res_partner_category_read')),(4,ref('stratification_base.group_stratification_res_partner_industry_read')),(4,ref('stratification_base.group_stratification_res_partner_title_read')),(4,ref('stratification_base.group_stratification_res_users_read')),(4,ref('stratification_stock.group_stratification_stock_location_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_res_partner_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_res_partner_read'))]"/>
+    </record>
+
+    <!-- stock.inventory model groups -->
+    <record id="stratification_stock.group_stratification_stock_inventory_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_category_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_inventory_line_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_inventory_menu_action_inventory_form_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_inventory_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_inventory_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_inventory_read'))]"/>
+    </record>
+
+    <!-- stock.inventory.line model groups -->
+    <record id="stratification_stock.group_stratification_stock_inventory_line_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_inventory_line_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_inventory_line_read'))]"/>
+    </record>
+
+    <!-- stock.location model groups -->
+    <record id="stratification_stock.group_stratification_stock_location_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_product_putaway_read')),(4,ref('stratification_stock.group_stratification_product_removal_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_location_menu_action_location_form_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_location_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_location_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_location_read'))]"/>
+    </record>
+
+    <!-- stock.location.path model groups -->
+    <record id="stratification_stock.group_stratification_stock_location_path_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_location_path_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_location_path_read'))]"/>
+    </record>
+
+    <!-- stock.location.route model groups -->
+    <record id="stratification_stock.group_stratification_stock_location_route_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_rule_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_stock.group_stratification_stock_location_path_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_location_route_menu_routes_config_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_location_route_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_location_route_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_location_route_read'))]"/>
+    </record>
+
+    <!-- stock.move model groups -->
+    <record id="stratification_stock.group_stratification_stock_move_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_template_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_move_stock_move_menu_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_move_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_move_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_move_read'))]"/>
+    </record>
+
+    <!-- stock.move.line model groups -->
+    <record id="stratification_stock.group_stratification_stock_move_line_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_move_line_stock_move_line_menu_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_move_line_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_move_line_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_move_line_read'))]"/>
+    </record>
+
+    <!-- stock.picking model groups -->
+    <record id="stratification_stock.group_stratification_stock_picking_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_mail.group_stratification_mail_activity_read')),(4,ref('stratification_mail.group_stratification_mail_followers_read')),(4,ref('stratification_mail.group_stratification_mail_message_read')),(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_picking_all_picking_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_picking_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_picking_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_picking_read'))]"/>
+    </record>
+
+    <!-- stock.picking.type model groups -->
+    <record id="stratification_stock.group_stratification_stock_picking_type_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_barcodes.group_stratification_barcode_nomenclature_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_picking_type_stock_picking_type_menu_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_picking_type_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_picking_type_menu_pickingtype_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_picking_type_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_picking_type_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_picking_type_read'))]"/>
+    </record>
+
+    <!-- stock.quant model groups -->
+    <record id="stratification_stock.group_stratification_stock_quant_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_quant_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_quant_read'))]"/>
+    </record>
+
+    <!-- stock.quant.package model groups -->
+    <record id="stratification_stock.group_stratification_stock_quant_package_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_packaging_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_line_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_quant_package_menu_package_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_quant_package_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <!-- stock.scrap model groups -->
+    <record id="stratification_stock.group_stratification_stock_scrap_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_move_read')),(4,ref('stratification_stock.group_stratification_stock_picking_read')),(4,ref('stratification_stock.group_stratification_stock_production_lot_read')),(4,ref('stratification_stock.group_stratification_stock_quant_package_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_scrap_menu_stock_scrap_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_scrap_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_scrap_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_scrap_read'))]"/>
+    </record>
+
+    <!-- stock.warehouse model groups -->
+    <record id="stratification_stock.group_stratification_stock_warehouse_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_base.group_stratification_res_partner_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_picking_type_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_warehouse_menu_action_warehouse_form_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_warehouse_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <!-- stock.warehouse.orderpoint model groups -->
+    <record id="stratification_stock.group_stratification_stock_warehouse_orderpoint_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_stock.group_stratification_procurement_group_read')),(4,ref('stratification_product.group_stratification_product_product_read')),(4,ref('stratification_product.group_stratification_product_uom_read')),(4,ref('stratification_base.group_stratification_res_company_read')),(4,ref('stratification_stock.group_stratification_stock_location_read')),(4,ref('stratification_stock.group_stratification_stock_warehouse_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_warehouse_orderpoint_menu_reordering_rules_config_menu" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_warehouse_orderpoint_read'))]"/>
+    </record>
+
+    <record id="stratification_stock.group_stratification_stock_warehouse_orderpoint_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_stock.group_stratification_stock_warehouse_orderpoint_read'))]"/>
     </record>
 
   </data>

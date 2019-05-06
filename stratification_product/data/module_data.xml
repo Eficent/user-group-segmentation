@@ -4,73 +4,8 @@
 <odoo>
   <data>
 
-    <record id="model_stratification_product_attribute" model="ir.module.category">
-        <field name="name">Stratification Product Attribute</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_attribute_line" model="ir.module.category">
-        <field name="name">Stratification Product Attribute Line</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_attribute_price" model="ir.module.category">
-        <field name="name">Stratification Product Attribute Price</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_attribute_value" model="ir.module.category">
-        <field name="name">Stratification Product Attribute Value</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_category" model="ir.module.category">
-        <field name="name">Stratification Product Category</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_packaging" model="ir.module.category">
-        <field name="name">Stratification Product Packaging</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_price_history" model="ir.module.category">
-        <field name="name">Stratification Product Price History</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_pricelist" model="ir.module.category">
-        <field name="name">Stratification Product Pricelist</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_pricelist_item" model="ir.module.category">
-        <field name="name">Stratification Product Pricelist Item</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_product" model="ir.module.category">
-        <field name="name">Stratification Product Product</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_supplierinfo" model="ir.module.category">
-        <field name="name">Stratification Product Supplierinfo</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_template" model="ir.module.category">
-        <field name="name">Stratification Product Template</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_uom" model="ir.module.category">
-        <field name="name">Stratification Product Uom</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_product_uom_categ" model="ir.module.category">
-        <field name="name">Stratification Product Uom Categ</field>
+    <record id="module_stratification_product" model="ir.module.category">
+        <field name="name">Stratification product</field>
         <field name="sequence">200</field>
     </record>
 

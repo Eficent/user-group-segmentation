@@ -15,7 +15,7 @@
 
     <!--  menu -->
     <record id="base.menu_board_root" model="ir.ui.menu">
-        <field name="groups_id" eval="[(4,ref('base.group_user')),(4,ref('group_stratification_base_root_menu'))]"/>
+        <field name="groups_id" eval="[(4,ref('base.group_user')),(4,ref('group_stratification_base_menu_board_root_menu'))]"/>
     </record>
     
   </data>

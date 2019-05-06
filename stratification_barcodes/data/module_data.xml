@@ -4,13 +4,8 @@
 <odoo>
   <data>
 
-    <record id="model_stratification_barcode_nomenclature" model="ir.module.category">
-        <field name="name">Stratification Barcode Nomenclature</field>
-        <field name="sequence">200</field>
-    </record>
-
-    <record id="model_stratification_barcode_rule" model="ir.module.category">
-        <field name="name">Stratification Barcode Rule</field>
+    <record id="module_stratification_barcodes" model="ir.module.category">
+        <field name="name">Stratification barcodes</field>
         <field name="sequence">200</field>
     </record>
 

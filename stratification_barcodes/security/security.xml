@@ -4,36 +4,24 @@
 <odoo>
   <data>
 
-    <!-- barcode.nomenclature read group -->
+    <!-- barcode.nomenclature model groups -->
     <record id="group_stratification_barcode_nomenclature_read" model="res.groups">
-        <field name="name">Stratification Barcode Nomenclature Read</field>
-        <field name="category_id" ref="model_stratification_barcode_nomenclature"/>
-    </record>
-
-    <!-- barcode.rule read group -->
-    <record id="group_stratification_barcode_rule_read" model="res.groups">
-        <field name="name">Stratification Barcode Rule Read</field>
-        <field name="category_id" ref="model_stratification_barcode_rule"/>
-    </record>
-
-    <!-- barcode.nomenclature view/write groups -->
-    <record id="group_stratification_barcode_nomenclature_menu" model="res.groups">
-        <field name="name">Stratification Barcode Nomenclature Menu</field>
-        <field name="category_id" ref="model_stratification_barcode_nomenclature"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_barcodes.group_stratification_barcode_nomenclature_read')),(4,ref('stratification_barcodes.group_stratification_barcode_rule_read'))]"/>
+        <field name="name">Stratification Barcodes - barcode.nomenclature Read</field>
+        <field name="category_id" ref="module_stratification_barcodes"/>
     </record>
 
     <record id="group_stratification_barcode_nomenclature_write" model="res.groups">
-        <field name="name">Stratification Barcode Nomenclature Write</field>
-        <field name="category_id" ref="model_stratification_barcode_nomenclature"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_barcodes.group_stratification_barcode_nomenclature_read')),(4,ref('stratification_barcodes.group_stratification_barcode_rule_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+        <field name="name">Stratification Barcodes - barcode.nomenclature Write</field>
+        <field name="category_id" ref="module_stratification_barcodes"/>
     </record>
 
-    <!-- barcode.rule view/write groups -->
-    <record id="group_stratification_barcode_rule_write" model="res.groups">
-        <field name="name">Stratification Barcode Rule Write</field>
-        <field name="category_id" ref="model_stratification_barcode_rule"/>
-        <field name="implied_ids" eval="[(4,ref('stratification_barcodes.group_stratification_barcode_nomenclature_read')),(4,ref('stratification_barcodes.group_stratification_barcode_rule_read')),(4,ref('stratification_base.group_stratification_res_users_read'))]"/>
+    <!-- barcode.nomenclature model groups -->
+    <record id="stratification_barcodes.group_stratification_barcode_nomenclature_read" model="res.groups">
+        <field name="implied_ids" eval="[(4,ref('stratification_barcodes.group_stratification_barcode_rule_read'))]"/>
+    </record>
+
+    <record id="stratification_barcodes.group_stratification_barcode_nomenclature_write" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('stratification_barcodes.group_stratification_barcode_nomenclature_read'))]"/>
     </record>
 
   </data>
